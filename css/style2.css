@@ -888,6 +888,35 @@ h3{
 
 }
 
+/* Ajuste responsivo no banner - via Gemini */
+@media (max-width: 767px) {
+  /* Achata a caixa branca ao máximo */
+  .slider-area .single-slider .slider-content {
+    padding: 10px 15px 35px 15px; /* Apenas o essencial para o botão na base */
+    max-width: 80%;
+    min-height: auto; /* Garante que não haja altura mínima forçada */
+  }
+
+  /* Mantém o título escondido */
+  .slider-area .single-slider .slider-content h3 {
+    display: none;
+  }
+
+  /* Remove as margens do parágrafo que "esticam" a caixa */
+  .slider-area .single-slider .slider-content p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0; /* Remove o espaço entre o texto e o botão */
+    line-height: 1.2;
+  }
+
+  /* Ajusta o botão para ficar bem rente ao fundo da caixa curta */
+  .slider-area .single-slider .slider-content .slider-btn {
+    left: 15px;
+    bottom: 5px; /* Sobe um pouco o botão para caber na caixa menor */
+  }
+}
+
 .slider-area .single-slider{
   height:760px;
   background-size:cover;
@@ -901,11 +930,11 @@ h3{
   position:relative;
   z-index:2}
 
-@media (max-width: 767px){
+/* @media (max-width: 767px){
   .slider-area .single-slider{
   height:600px}
 
-}
+} */
 
 .slider-area .single-slider::before{
   position:absolute;
@@ -925,11 +954,11 @@ h3{
   z-index:9;
   display:inline-block}
 
-@media (max-width: 767px){
+/* @media (max-width: 767px){
   .slider-area .single-slider .slider-content{
   padding:73px 40px 100px 40px}
 
-}
+} */
 
 .slider-area .single-slider .slider-content p{
   color:#CD442B;
@@ -945,13 +974,13 @@ h3{
   line-height:72px;
   margin-bottom:28px}
 
-@media (max-width: 767px){
+/* @media (max-width: 767px){
   .slider-area .single-slider .slider-content h3{
   font-size:25px;
   line-height:45px;
   margin-bottom:10px}
 
-}
+} */
 
 .slider-area .single-slider .slider-content a i{
   font-size:14px;
@@ -962,11 +991,11 @@ h3{
   bottom:0;
   left:55px}
 
-@media (max-width: 767px){
+/* @media (max-width: 767px){
   .slider-area .single-slider .slider-content .slider-btn{
   left:40px}
 
-}
+} */
 
 .slider-area .slider-active .owl-dots{
   position:absolute;
